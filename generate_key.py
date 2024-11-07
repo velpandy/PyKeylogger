@@ -10,7 +10,7 @@ def generate_and_save_key():
     # Save the key to a file (e.g., key.key) securely
     with open("key.key", "wb") as key_file:
         key_file.write(key)
-    print("Key saved to key.key")
+    print("Key is saved to key.key")
 
 if __name__ == "__main__":
     generate_and_save_key()
