@@ -23,7 +23,7 @@ def start_keylogger():
         keylogger = KeyLogger(log_file_path)
         keylogger_thread = threading.Thread(target=keylogger.start_logging)
         keylogger_thread.start()
-        return jsonify({"status": "Keylogger started"})
+        return jsonify({"status": "Keylogger is started"})
     return jsonify({"status": "Keylogger already running"})
 
 @app.route('/stop', methods=['POST'])
@@ -39,7 +39,7 @@ def stop_keylogger():
         with open(log_file_path, "wb") as log_file:
             log_file.write(encrypted_data)
 
-        return jsonify({"status": "Keylogger stopped", "message": "Encrypted log saved."})
+        return jsonify({"status": "Keylogger is stopped", "message": "Encrypted log is saved."})
     return jsonify({"status": "Keylogger is not running"})
 
 @app.route('/view-log', methods=['GET'])
