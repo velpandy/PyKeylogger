@@ -7,7 +7,7 @@ class LogViewer:
 
     def display_data(self):
         # Process log data and display a heatmap or other analysis
-        plt.plot([1, 2, 3], [4, 5, 6])  # Placeholder for visualization
+        plt.plot([1, 2, 3, 4], [5, 6, 7, 8])  # Placeholder for visualization
         plt.show()
 
     def launch_gui(self):
